@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empowering the Nation</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="_images/logo.png" alt="Empowering the Nation Logo">
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="payment.html">Payment</a></li>
+      </ul>
+      <div class="profile" id="profileSection">
+        <img id="profileImage" src="https://via.placeholder.com/40" alt="Profile Picture">
+        <span id="profileEmail">Not signed in</span>
+        <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+        <!-- Logout Button -->
+        <button id="logoutBtn" style="display:none;">Logout</button> <!-- Initially hidden -->
+    </div>
+    
+    </nav>
+  </header>
+  
+
+
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h1><span>EMPOWERING THE</span> <span class="highlight">NATION</span></h1>
+    <button id="joinUsBtn">Join Us</button>
+  </div>
+</section>
+
+<!-- Join Us Button -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Join Us</h2>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+
+  <!-- Main Content Section -->
+<section class="main-content">
+  <div class="content-wrapper">
+    <div class="image-left">
+      <img src="_images/home-image.jpg" alt="Home Image">
+    </div>
+    <div class="text-right">
+      <h2><span class="highlight">BEGIN YOUR JOURNEY WITH US</span></h2>
+      <p class="justified-text">
+        Welcome to Empowering the Nation, where your path to a brighter future starts today. Whether you’re a domestic worker or gardener looking to elevate your skills, we are here to help you unlock your full potential. Our hands-on training programs are tailored to empower you with the knowledge, confidence, and certification needed to stand out in the job market. Join a community of learners transforming their careers, one skill at a time. Take the first step—explore our courses and begin your journey with us now.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Program Divs -->
+  <section class="program-section">
+    <div class="program">
+      <div class="program-box" id="domestic-program">
+        <h3>DOMESTIC PROGRAM</h3>
+        <p>Learn essential skills like cleaning, cooking, and household management with a focus on professionalism, safety, and efficiency. Graduates receive a certificate recognised by top employers, enhancing job prospects and earning potential.</p>
+        <a href="courses.html"  class="view-btn">View Classes</a>
+      </div>
+      <div class="program-box" id="gardener-program">
+        <h3>GARDENER’S ADVANCED SKILLS TRAINING</h3>
+        <p>Gain expertise in landscaping, plant care, and eco-friendly gardening techniques. This course not only enhances your hands-on skills but also teaches sustainable practices that are in high demand. Certification opens doors to more advanced roles and better pay.</p>
+        <a href="courses.html" class="view-btn">View Classes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discounts Section -->
+  <section class="discount-section">
+    <div class="discount-box">
+      <h2>CHECK OUR DISCOUNTS!</h2>
+      <p>SAVE UP TO 15%</p>
+    </div>
+  </section>
+
+ <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Navigation Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Payment</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p><strong>Address:</strong> 144 Peter Rd, Ruimsig, Roodepoort</p>
+      <p><strong>Phone:</strong> +27 +++ +++ ++</p>
+      <p><strong>Email:</strong> <a href="mailto:empoweringtn@gmail.com">empoweringtn@gmail.com</a></p>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div> 
+  </div>
+
+  <!-- Copyright Section -->
+  <div class="footer-copyright">
+    <p>&copy; 2024 Empowering the Nation. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
+

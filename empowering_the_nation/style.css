@@ -1,0 +1,212 @@
+/* General Reset */
+  
+  /* Navigation Menu */
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #264653;
+    padding: 10px;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  header nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #264653;
+    padding: 10px;
+    list-style-type: none;
+  }
+  
+  header nav ul li .dropdown-menu li {
+    margin: 0;
+  }
+  
+  header nav ul li:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #2a9d8f;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+  }
+  
+  /* Main Content */
+  #main-content {
+    padding: 40px;
+    background-color: rgb(26, 76, 170);
+  }
+  
+  .featured-heading {
+    font-size: 2.5em;
+    color: #ffffff; /* Adjusted for visibility */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .discount-info {
+    font-size: 1.2em;
+    color: #ffffff; /* Adjusted for visibility */
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .discount-list {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    color: #ffffff; /* Adjusted for visibility */
+    font-size: 1em;
+    margin-bottom: 30px;
+  }
+  
+  .discount-list li {
+    margin: 5px 0;
+  }
+  
+  /* Course List */
+  .courses-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .course-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .course-fee, .course-purpose {
+    margin: 10px 0;
+  }
+  
+/* Footer Styles */
+.footer {
+  background-color: rgb(241, 241, 44);
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0; /* Remove bottom padding */
+}
+
+.footer-links, .footer-contact, .footer-social {
+  flex: 1 1 200px;
+  padding: 10px;
+}
+
+/* Ensure the links are vertically aligned */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block; /* Ensure block display for vertical alignment */
+}
+
+.footer-links ul li {
+  margin-bottom: 3px; /* Reduce space between links */
+  line-height: 1.4;   /* Compact line height */
+}
+
+.footer-links ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-contact {
+  text-align: center;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-contact a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 0 10px;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #007BFF; /* Change color on hover to a nice blue */
+}
+
+/* Copyright Styles */
+.footer-copyright {
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-copyright p {
+  margin: 0;
+  font-size: 14px;
+}
+  

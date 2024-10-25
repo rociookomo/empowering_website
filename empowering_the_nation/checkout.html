@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Empowering the Nation</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS -->
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="checkout.html" id="cartIcon">Cart (<span id="cartQuantity">0</span>)</a>
+        </nav>
+    </header>
+
+    <div class="checkout-container">
+      <!-- Cart Section -->
+      <div id="cartSection">
+          <h2>Your Cart</h2>
+          <div id="cartItems">
+              <!-- Cart items will be dynamically inserted here -->
+          </div>
+      </div>
+  
+      <!-- Payment Section -->
+      <div id="paymentSection">
+          <h2>Order Summary</h2>
+          <p>Total Price: <span id="totalPrice">R0.00</span></p>
+          <p>Discount: <span id="discount">0%</span></p>
+          <p>Total Payable: <span id="totalPayable">R0.00</span></p>
+          <button id="processOrderBtn">Process Order</button>
+      </div>
+  </div>
+  
+  
+
+    <script src="scripts/checkout.js"></script>
+</body>
+</html>

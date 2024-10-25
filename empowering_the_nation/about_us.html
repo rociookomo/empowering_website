@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Empowering the Nation</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="_images/logo.png" alt="Empowering the Nation Logo">
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about_us.html" class="active">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="payment.html">Payment</a></li>
+      </ul>
+      <div class="profile" id="profileSection">
+        <!-- Placeholder profile image and user name -->
+        <img id="profileImage" src="https://via.placeholder.com/40" alt="Profile Picture">
+        <span id="profileEmail">Not signed in</span>
+        <!-- Hidden input for file upload -->
+        <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero about-hero">
+    <div class="hero-text">
+      <h1>About Us</h1>
+    </div>
+  </section>
+
+  <!-- Main Content Section -->
+  <section class="about-section">
+    <div class="about-content">
+      <div class="content-wrapper">
+        <p>
+            Welcome to Empowering the Nation, where we are dedicated to enhancing domestic workers' and gardeners' skills and opportunities.
+            Our commitment, founded in 2018, is inspired by a deep-rooted desire to provide the same opportunities for growth and education that
+            were unavailable to our founder’s family and community.<br><br>
+            Based in Johannesburg, we offer comprehensive training programs to make our participants more marketable and competitive in the
+            job market. Our six-month courses include first aid, sewing, landscaping, and life skills, while our six-week short courses cover
+            child minding, cooking, and garden maintenance.<br><br>
+            At Empowering the Nation, we believe in empowering individuals to seek better employment opportunities and start their businesses.
+            We offer a range of courses with discounts for multiple enrollments, ensuring that our services are accessible and affordable.<br><br>
+            Join us in transforming lives and communities through the transformative power of skill development and education. Together, we
+            can inspire change and create a brighter future for all.
+        
+      </div>
+      <a href="courses.html" class="learn-more-btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Navigation Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Payment</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p><strong>Address:</strong> 144 Peter Rd, Ruimsig, Roodepoort</p>
+      <p><strong>Phone:</strong> +27 +++ +++ ++</p>
+      <p><strong>Email:</strong> <a href="mailto:empoweringtn@gmail.com">empoweringtn@gmail.com</a></p>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+  </div> 
+  
+  <!-- Copyright Section -->
+  <div class="footer-copyright">
+    <p>&copy; 2024 Empowering the Nation. All rights reserved.</p>
+  </div>
+</footer>
+
+  
+<script>
+  // On page load, check if the user is logged in by checking localStorage
+  window.onload = function() {
+    const storedEmail = localStorage.getItem('userEmail');
+    const profileEmail = document.getElementById('profileEmail');
+    if (storedEmail && profileEmail) {
+      profileEmail.textContent = storedEmail; // Update profile section with stored email
+    }
+  }
+</script>
+
+</body>
+</html>
